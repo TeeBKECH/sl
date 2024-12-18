@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import '_vars';
+@import '_mixins';
+@import '_reset';
+@import '../../node_modules/air-datepicker/air-datepicker.css';
+// @import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
+
+html,
+body {
+  // scroll-behavior: smooth;
+}
+
+html {
+  // font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+
+  &.noscroll {
+    overflow-y: hidden;
+  }
+}
+
+.gradient {
+  background: linear-gradient(to right, #27aa91, #1f8673);
+}
+
+/*------------------ PAGES ------------------*/
+@import 'pages/page';
+@import 'pages/client';
+@import 'pages/auth';
+
+/*------------------ Components ------------------*/
+@import 'components/btn';
+@import 'components/container';
+@import 'components/profile';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/progress';
+@import 'components/breadcrumbs';
+@import 'components/title';
+@import 'components/article';
+@import 'components/widget';
+@import 'components/alert';
+@import 'components/text';
+@import 'components/list';
+@import 'components/video';
+@import 'components/chat';
+@import 'components/burger';
+@import 'components/messengers';
+@import 'components/search';
+@import 'components/events';
+@import 'components/pagination';
+@import 'components/notifications';
+@import 'components/dropdown';
+
+@import 'components/form/form';
+@import 'components/form/checkbox';
+@import 'components/form/control';
+@import 'components/form/input';
+@import 'components/form/select';
+@import 'components/form/upload';
+@import 'components/form/files';
+
+@import 'components/layout/layout';
+@import 'components/layout/header';
+@import 'components/layout/aside';
+@import 'components/layout/main';
+@import 'components/layout/content';

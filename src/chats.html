@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <title>SL | CHATS</title>
+  </head>
+  <body class="body">
+    <div class="page page-doctor">
+      <div class="layout">
+        <header class="header gradient">
+          <a
+            href="events.html"
+            class="logo header_logo"
+          >
+            <div class="logo_img">
+              <img
+                src="assets/img/svg/logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="logo_text">
+              <span class="logo_text_top">SL - Клиника</span>
+              <span class="logo_text_bottom"
+                >Клиника консервативного лечения заболеваний позвоночника и суставов</span
+              >
+            </div>
+            <div class="logo_text logo_text-mobile">
+              <span class="logo_text_top">SL</span>
+              <span class="logo_text_top">Клиника</span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="notifications notifications-show"
+          >
+            <span class="notifications_icon"></span>
+            <span class="notifications_count">12</span>
+          </a>
+          <div
+            class="profile"
+            tabindex="0"
+          >
+            <div class="profile_text">Добронравов Олег Робертович</div>
+            <div class="profile_avatar"><span>О</span></div>
+          </div>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+        <aside
+          id="menu"
+          class="aside aside-left gradient"
+        >
+          <ul class="menu">
+            <li class="menu_item">
+              <a
+                href="events.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">События</div>
+                  <div class="notifications notifications-v2">
+                    <div class="notifications_icon"></div>
+                    <div class="notifications_count">12 новых событий</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item menu_item-active">
+              <a
+                href="chats.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Чаты с пациентами</div>
+                  <div class="notifications notifications-v2 notifications-dark">
+                    <div class="notifications_icon"></div>
+                    <div class="notifications_count">15 новых сообщений</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="clients.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Все пациенты</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="rules.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Правила при госпитализации</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="recomend.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Рекомендации после операции</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <main class="main main-full">
+          <div class="content">
+            <div class="content_head">
+              <div class="breadcrumbs">
+                <a
+                  href="client.html"
+                  class="breadcrumbs_link"
+                  >Личный кабинет</a
+                >
+                <span class="breadcrumbs_sep">/</span>
+                <span class="breadcrumbs_text">Чаты с пациентами</span>
+              </div>
+              <div class="title title-page">Чаты с пациентами</div>
+            </div>
+            <div class="content_body">
+              <div class="page_actions">
+                <div class="page_actions_btns">
+                  <button class="btn btn-main">Отметить как прочитанное</button>
+                  <button class="btn btn-main">Отметить как непрочитанное</button>
+                </div>
+                <div class="page_actions_search search">
+                  <input
+                    type="text"
+                    placeholder="Поиск..."
+                  />
+                  <span class="search_icon"></span>
+                </div>
+              </div>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article title-badge">04.12.2024 <span>2</span></div>
+                </div>
+                <div class="article_body">
+                  <div class="events_items">
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article title-badge">04.12.2024 <span>2</span></div>
+                </div>
+                <div class="article_body">
+                  <div class="events_items">
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article title-badge">04.12.2024 <span>2</span></div>
+                </div>
+                <div class="article_body">
+                  <div class="events_items">
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                    <div class="events_item">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox1"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Добронравов Олег Робертович</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:30</span>
+                    </div>
+                    <div class="events_item events_item-readed">
+                      <div class="events_item_checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                        />
+                        <label
+                          class="events_item_checkbox_visible"
+                          for="checkbox2"
+                        ></label>
+                      </div>
+                      <div class="events_item_info">
+                        <span class="events_item_person">Пользователь</span>
+                        <a href="#">Ворнава Ирина Ионовна</a>
+                        <span>написал</span>
+                        <a href="#">в чат</a>
+                      </div>
+                      <span class="events_item_timestamp">14:10</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <div class="pagination">
+                <div class="loadmore">
+                  <button class="btn btn-main">Загрузить еще</button>
+                </div>
+                <ul class="pagination_items">
+                  <li>
+                    <a
+                      class="pagination_nums pagination_nav pagination_nav_prev"
+                      href="#"
+                      >Назад</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      aria-current="page"
+                      class="pagination_nums pagination_nums-current"
+                      >1</span
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="pagination_nums"
+                      href="#"
+                      >2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="pagination_nums"
+                      href="#"
+                      >3</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="pagination_nums"
+                      href="#"
+                      >4</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="pagination_nums"
+                      href="#"
+                      >5</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="pagination_nums pagination_nav pagination_nav_next"
+                      href="#"
+                      >Вперед</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

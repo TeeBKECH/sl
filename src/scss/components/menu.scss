@@ -1,0 +1,44 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  &_item {
+    line-height: 1;
+    border-bottom: 1px solid #1e7868;
+    background: transparent;
+    $item: &;
+
+    &-active {
+      background: #fff;
+
+      .menu_link_text {
+        color: #1e7868;
+      }
+    }
+  }
+
+  &_link {
+    display: grid;
+    grid-template-columns: 8px 1fr;
+
+    &_status {
+      display: block;
+      width: 8px;
+      height: 100%;
+      background: #33dfbf;
+    }
+
+    &_content {
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &_text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}

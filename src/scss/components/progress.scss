@@ -1,0 +1,44 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  $progress: &;
+
+  &_bar {
+    display: block;
+    width: 100px;
+    height: 4px;
+    border-radius: 4px;
+    background: #1e7868;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &_line {
+    display: block;
+    height: 100%;
+    background: #33dfbf;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &_text {
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  &-dark {
+    #{$progress}_text {
+      color: #59677d;
+    }
+
+    #{$progress}_bar {
+      background: #bef5eb;
+    }
+  }
+}

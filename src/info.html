@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <title>SL | INFO</title>
+  </head>
+  <body class="body">
+    <div class="page page-client">
+      <div class="layout">
+        <header class="header gradient">
+          <a
+            href="about.html"
+            class="logo header_logo"
+          >
+            <div class="logo_img">
+              <img
+                src="assets/img/svg/logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="logo_text">
+              <span class="logo_text_top">SL - Клиника</span>
+              <span class="logo_text_bottom"
+                >Клиника консервативного лечения заболеваний позвоночника и суставов</span
+              >
+            </div>
+            <div class="logo_text logo_text-mobile">
+              <span class="logo_text_top">SL</span>
+              <span class="logo_text_top">Клиника</span>
+            </div>
+          </a>
+          <div
+            class="profile header_profile"
+            tabindex="0"
+          >
+            <div class="profile_text">Добронравов Олег Робертович</div>
+            <div class="profile_avatar"><span>О</span></div>
+          </div>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+        <aside
+          id="menu"
+          class="aside aside-left gradient"
+        >
+          <ul class="menu">
+            <li class="menu_item">
+              <a
+                href="about.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Информация о пациенте</div>
+                  <div
+                    class="progress"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 50%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">50%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item menu_item-active">
+              <a
+                href="info.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Медицинская информация</div>
+                  <div
+                    class="progress progress-dark"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 76%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">76%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="docs.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Документы и анализы пациента</div>
+                  <div
+                    class="progress"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 20%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">20%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="rules.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Правила при госпитализации</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="recomend.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Рекомендации после операции</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="chat-client.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Чат с клиникой</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="#"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Контакты</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <form class="main">
+          <div class="content">
+            <div class="content_head">
+              <div class="breadcrumbs">
+                <a
+                  href="client.html"
+                  class="breadcrumbs_link"
+                  >Личный кабинет</a
+                >
+                <span class="breadcrumbs_sep">/</span>
+                <span class="breadcrumbs_text">Медицинская информация</span>
+              </div>
+              <div class="title title-page">Медицинская информация</div>
+            </div>
+            <div class="content_body">
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Жалобы</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control">
+                      <label
+                        class="control_title control_title-notice"
+                        for="comment"
+                        >Жалобы на здоровье
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></label
+                      >
+                      <textarea
+                        id="comment"
+                        name="comment"
+                        placeholder="Опишите, пожалуйста, основное, что вас беспокоит"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Хронические заболевания</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Есть ли у вас хронические заболевания?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="chronical-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-yeah"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Есть</span>
+                        </label>
+                        <label
+                          for="chronical-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-no"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <div class="select">
+                        <div class="select_input">
+                          <button type="button">
+                            Выбрать один или несколько <span class="select_arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Сахарный диабет</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Сахарный диабет</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Приём медикаментов</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Принимали ли ранее медикаменты
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="chronical-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-yeah"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Есть</span>
+                        </label>
+                        <label
+                          for="chronical-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-no"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <div class="select">
+                        <div class="select_input">
+                          <button type="button">
+                            Выбрать один или несколько <span class="select_arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Аспирин</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Предыдущие операции</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Были у вас ранее операции?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="chronical-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-yeah"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Есть</span>
+                        </label>
+                        <label
+                          for="chronical-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="chronical-no"
+                            type="radio"
+                            name="chronical"
+                            value="chronical-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <textarea
+                        class="textarea textarea-sm"
+                        name="comment2"
+                        placeholder="Напишите пожалуйста какие операции у вас были..."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Аллергии и лекарственная непереносимость</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >У вас есть аллергия или лекарственная неперносимость?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="alergy-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="alergy-yeah"
+                            type="radio"
+                            name="alergy"
+                            value="alergy-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Да</span>
+                        </label>
+                        <label
+                          for="alergy-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="alergy-no"
+                            type="radio"
+                            name="alergy"
+                            value="alergy-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <div class="select">
+                        <div class="select_input">
+                          <button type="button">
+                            Выбрать один или несколько <span class="select_arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Антибиотики</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Удалить комментарий
+                            </button>
+                            <textarea
+                              class="textarea textarea-sm"
+                              placeholder="Прием препаратов должен осуществляться строго в соответствии с рекомендациями врача. Важно соблюдать дозировку, время приема и длительность курса"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Анестетики</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Инфекционные заболевания</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Были ли или есть у вас инфекционные заболевания?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="infection-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="infection-yeah"
+                            type="radio"
+                            name="infection"
+                            value="infection-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Да</span>
+                        </label>
+                        <label
+                          for="infection-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="infection-no"
+                            type="radio"
+                            name="infection"
+                            value="infection-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <div class="select">
+                        <div class="select_input">
+                          <button type="button">
+                            Выбрать один или несколько <span class="select_arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Туберкулёз</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Гепатит</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Наследственные заболевания</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control">
+                      <label
+                        class="control_title control_title-notice"
+                        for="comment"
+                        >Есть ли у вас наследственные заболевания?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></label
+                      >
+                      <textarea
+                        id="comment"
+                        name="comment"
+                        placeholder="Напишите пожалуйста есть ли у вас наследственные заболевания..."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Вредные привычки</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Есть ли у вас вредные привычки?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="habbits-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="habbits-yeah"
+                            type="radio"
+                            name="habbits"
+                            value="habbits-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Да</span>
+                        </label>
+                        <label
+                          for="habbits-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="habbits-no"
+                            type="radio"
+                            name="habbits"
+                            value="habbits-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                      <div class="select">
+                        <div class="select_input">
+                          <button type="button">
+                            Выбрать один или несколько <span class="select_arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Курение</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected_item">
+                          <div class="selected_item_head">
+                            <span class="selected_item_title">Алкоголь</span>
+                            <button
+                              type="button"
+                              class="selected_item_del"
+                            >
+                              Удалить
+                            </button>
+                          </div>
+                          <div class="selected_item_body">
+                            <button
+                              type="button"
+                              class="selected_item_add"
+                            >
+                              Добавить комментарий к заболеванию
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Беременность</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Беременны в настоящий момент?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="pregnant-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="pregnant-yeah"
+                            type="radio"
+                            name="pregnant"
+                            value="pregnant-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Да</span>
+                        </label>
+                        <label
+                          for="pregnant-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="pregnant-no"
+                            type="radio"
+                            name="pregnant"
+                            value="pregnant-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="article_head">
+                  <div class="title title-article">Больничный лист</div>
+                </div>
+                <div class="article_body">
+                  <div class="form_controls">
+                    <div class="control control-g24">
+                      <span class="control_title control_title-notice"
+                        >Нужен ли больничный лист?
+                        <div class="control_notice">
+                          <span class="control_notice_icon"></span>
+                          <div class="control_notice_content">
+                            <p>
+                              Далеко-далеко за словесными горами в стране гласных, и согласных живут
+                              рыбные тексты.
+                            </p>
+                          </div>
+                        </div></span
+                      >
+                      <div class="checkbox">
+                        <label
+                          for="list-yeah"
+                          tabindex="0"
+                        >
+                          <input
+                            id="list-yeah"
+                            type="radio"
+                            name="list"
+                            value="list-yeah"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Да</span>
+                        </label>
+                        <label
+                          for="list-no"
+                          tabindex="0"
+                        >
+                          <input
+                            id="list-no"
+                            type="radio"
+                            name="list"
+                            value="list-no"
+                          />
+                          <div class="checkbox_cell"></div>
+                          <span>Нет</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <aside class="aside aside-right">
+            <div class="widget">
+              <div class="widget_title">Информация</div>
+              <div
+                class="progress progress-dark"
+                data-progress="about"
+              >
+                <div class="progress_bar">
+                  <span
+                    class="progress_line"
+                    style="width: 50%"
+                  ></span>
+                </div>
+                <p class="progress_text">Заполнено <span class="progress_value">50%</span></p>
+              </div>
+              <div class="widget_actions">
+                <button
+                  type="submit"
+                  class="btn btn-main btn-fw"
+                >
+                  Сохранить
+                </button>
+                <a
+                  href="info.html"
+                  class="btn btn-main btn-fw"
+                  >Далее</a
+                >
+              </div>
+            </div>
+          </aside>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

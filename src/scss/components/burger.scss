@@ -1,0 +1,19 @@
+.burger {
+  width: 24px;
+  height: 24px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+
+  @include maxWidth(1200px) {
+    display: flex;
+  }
+
+  span {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2.5px;
+  }
+}

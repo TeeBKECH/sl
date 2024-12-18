@@ -1,0 +1,116 @@
+.auth {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  &_form {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 60px;
+
+    @include maxWidth(576px) {
+      padding: 30px;
+      gap: 32px;
+    }
+
+    &_title,
+    &_footer {
+      text-align: center;
+    }
+
+    &_title {
+      span {
+        color: #1e7868;
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+
+    &_controls {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+    }
+
+    &_control {
+      display: flex;
+      justify-content: flex-start;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+
+        span {
+          font-size: 16px;
+          color: #334155;
+          font-weight: 600;
+        }
+
+        input {
+          font-size: 16px;
+          border-radius: 4px;
+          border: 1px solid #cbd5e1;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+
+          &::placeholder {
+            color: #59677d;
+            font-style: italic;
+          }
+
+          &.ok {
+            border-color: #34bda5;
+          }
+
+          &.err {
+            border-color: #f72121;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #334155;
+        font-weight: 400;
+      }
+
+      a {
+        color: #1e7868;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &_footer {
+      color: #1e7868;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+
+      a {
+        font-weight: 600;
+        color: #1e7868;
+      }
+    }
+  }
+}

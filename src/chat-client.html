@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <title>SL | CHAT CLIENT</title>
+  </head>
+  <body class="body">
+    <div class="page page-client">
+      <div class="layout">
+        <header class="header gradient">
+          <a
+            href="about.html"
+            class="logo header_logo"
+          >
+            <div class="logo_img">
+              <img
+                src="assets/img/svg/logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="logo_text">
+              <span class="logo_text_top">SL - Клиника</span>
+              <span class="logo_text_bottom"
+                >Клиника консервативного лечения заболеваний позвоночника и суставов</span
+              >
+            </div>
+            <div class="logo_text logo_text-mobile">
+              <span class="logo_text_top">SL</span>
+              <span class="logo_text_top">Клиника</span>
+            </div>
+          </a>
+          <div
+            class="profile header_profile"
+            tabindex="0"
+          >
+            <div class="profile_text">Добронравов Олег Робертович</div>
+            <div class="profile_avatar"><span>О</span></div>
+          </div>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+        <aside
+          id="menu"
+          class="aside aside-left gradient"
+        >
+          <ul class="menu">
+            <li class="menu_item">
+              <a
+                href="about.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Информация о пациенте</div>
+                  <div
+                    class="progress"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 50%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">50%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="info.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Медицинская информация</div>
+                  <div
+                    class="progress"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 76%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">76%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="docs.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Документы и анализы пациента</div>
+                  <div
+                    class="progress"
+                    data-progress="about"
+                  >
+                    <div class="progress_bar">
+                      <span
+                        class="progress_line"
+                        style="width: 20%"
+                      ></span>
+                    </div>
+                    <p class="progress_text">Заполнено <span class="progress_value">20%</span></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="rules.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Правила при госпитализации</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="recomend.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Рекомендации после операции</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item menu_item-active">
+              <a
+                href="chat-client.html"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Чат с клиникой</div>
+                </div>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a
+                href="#"
+                class="menu_link"
+              >
+                <span class="menu_link_status"></span>
+                <div class="menu_link_content">
+                  <div class="menu_link_text">Контакты</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <main class="main main-full">
+          <div class="content">
+            <div class="content_head">
+              <div class="breadcrumbs">
+                <a
+                  href="client.html"
+                  class="breadcrumbs_link"
+                  >Личный кабинет</a
+                >
+                <span class="breadcrumbs_sep">/</span>
+                <span class="breadcrumbs_text">Чат с клиникой</span>
+              </div>
+              <div class="title title-page">Чат с клиникой</div>
+            </div>
+            <div class="content_body">
+              <div class="chat">
+                <div class="chat_messages">
+                  <div class="chat_message">
+                    <div class="chat_message_profile">
+                      <div class="chat_message_profile_avatar"><span>О</span></div>
+                      <div class="chat_message_profile_name">Добронравов Олег Робертович</div>
+                    </div>
+                    <div class="chat_message_content">
+                      <div class="chat_message_actions">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="message">
+                        Уточните пожалуйста, обязательно ли иметь при себе оригинал паспорта или
+                        достаточно будет сканированной копии?
+                      </div>
+                      <div class="chat_message_timestamp">
+                        <span>18:50</span>
+                        <span>22.12.2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat_message chat_message-reverse">
+                    <div class="chat_message_profile">
+                      <div class="chat_message_profile_name">SL - Клиника</div>
+                      <div class="chat_message_profile_avatar"><span>SL</span></div>
+                    </div>
+                    <div class="chat_message_content">
+                      <div class="chat_message_actions">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="message">
+                        Добрый день, Олег!<br />Спасибо за ваш вопрос. <br />Пить нельзя за 3 часа
+                        до операции. Строго натощак. <br />Оригинал пасорта можно с собой не брать.
+                      </div>
+                      <div class="chat_message_timestamp">
+                        <span>18:50</span>
+                        <span>22.12.2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form class="chat_form">
+                  <input
+                    class="chat_form_input"
+                    name="chat"
+                    id="chat-client"
+                    placeholder="Написать сообщение"
+                  />
+                  <div class="chat_form_actions">
+                    <div class="chat_form_file">
+                      <input
+                        type="file"
+                        id="chat-file"
+                      />
+                      <label for="chat-file"></label>
+                    </div>
+                    <button
+                      class="btn btn-main"
+                      type="submit"
+                    >
+                      Отправить
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

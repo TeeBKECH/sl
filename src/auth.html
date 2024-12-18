@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <title>SL | Auth</title>
+  </head>
+  <body class="body">
+    <div class="page page-auth">
+      <section class="auth gradient">
+        <div class="container">
+          <form class="auth_form form">
+            <div class="auth_form_title">
+              <span>Вход в аккаунт</span>
+            </div>
+            <div class="auth_form_controls">
+              <div class="auth_form_control">
+                <label for="email">
+                  <span>Электронная почта</span>
+                  <input
+                    type="email"
+                    class="err"
+                    placeholder="Введите ваш e-mail"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="auth_form_control">
+                <label for="password">
+                  <span>Пароль</span>
+                  <input
+                    class="ok"
+                    type="password"
+                    placeholder="Введите пароль..."
+                    required
+                  />
+                </label>
+              </div>
+              <div class="auth_form_control">
+                <button
+                  class="form_btn btn btn-main btn-fw"
+                  type="submit"
+                >
+                  Войти
+                </button>
+              </div>
+              <div class="auth_form_control auth_form_control-reset">
+                <p>Забыли пароль? <a href="#">Восстановить</a></p>
+              </div>
+            </div>
+            <div class="auth_form_footer">
+              <a href="#">SL-Клиника</a>
+              <p>Клиника консервативного лечения заболеваний позвоночника и суставов</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

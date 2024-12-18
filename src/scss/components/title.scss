@@ -1,0 +1,35 @@
+.title {
+  line-height: 1;
+
+  &-page {
+    font-size: 32px;
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  &-article {
+    font-size: 20px;
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  &-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      background: #33dfbf;
+      border-radius: 16px;
+      width: 32px;
+      height: 24px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+  }
+}

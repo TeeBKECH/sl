@@ -1,0 +1,30 @@
+.header {
+  grid-area: header;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 2px 16px rgba(#16463e, 0.12), 0 4px 4px rgba(#16463e, 0.1);
+  position: relative;
+  z-index: 100;
+
+  @include maxWidth(1200px) {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  @include maxWidth(991px) {
+    padding: 16px 20px;
+  }
+
+  @include maxWidth(576px) {
+    gap: 10px;
+  }
+
+  &_profile {
+    @include maxWidth(1200px) {
+      margin-left: auto;
+    }
+  }
+}

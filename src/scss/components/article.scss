@@ -1,0 +1,28 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &_head {
+    position: relative;
+    padding-bottom: 16px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+}

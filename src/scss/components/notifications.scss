@@ -1,0 +1,70 @@
+.notifications {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: #33dfbf;
+  border-radius: 50px;
+  margin-left: auto;
+  $self: &;
+
+  @include maxWidth(576px) {
+    padding: 8px;
+  }
+
+  &-show {
+    display: flex;
+  }
+
+  &_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: none;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.8161 14.0942C16.5562 13.0292 15.8337 11.4725 15.8337 9.8233V7.5C15.8337 4.56757 13.6554 2.14005 10.8337 1.7334V0.833282C10.8337 0.372467 10.4603 0 10.0003 0C9.54037 0 9.16699 0.372467 9.16699 0.833282V1.7334C6.34442 2.14005 4.16699 4.56757 4.16699 7.5V9.8233C4.16699 11.4725 3.44449 13.0292 2.17694 14.1008C1.85284 14.3784 1.66699 14.7816 1.66699 15.2083C1.66699 16.0126 2.32114 16.6667 3.12527 16.6667H16.8753C17.6796 16.6667 18.3337 16.0126 18.3337 15.2083C18.3337 14.7816 18.1479 14.3784 17.8161 14.0942Z' fill='white'/%3E%3Cpath d='M10.0002 20C11.5094 20 12.7719 18.9241 13.0618 17.5H6.93848C7.22855 18.9241 8.49106 20 10.0002 20Z' fill='white'/%3E%3C/svg%3E");
+  }
+
+  &_count {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+
+    @include maxWidth(576px) {
+      display: none;
+    }
+  }
+
+  &-v2 {
+    display: flex;
+    margin-left: unset;
+    background: transparent;
+    padding: 0;
+    justify-content: flex-start;
+    gap: 4px;
+
+    #{$self}_icon {
+      width: 16px;
+      height: 16px;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2523 11.2754C13.2444 10.4233 12.6664 9.17798 12.6664 7.85864V6C12.6664 3.65405 10.9237 1.71204 8.66638 1.38672V0.666626C8.66638 0.297974 8.36768 0 7.99963 0C7.63171 0 7.33301 0.297974 7.33301 0.666626V1.38672C5.07495 1.71204 3.33301 3.65405 3.33301 6V7.85864C3.33301 9.17798 2.755 10.4233 1.74097 11.2806C1.48169 11.5027 1.33301 11.8253 1.33301 12.1666C1.33301 12.8101 1.85632 13.3334 2.49963 13.3334H13.4996C14.1431 13.3334 14.6664 12.8101 14.6664 12.1666C14.6664 11.8253 14.5177 11.5027 14.2523 11.2754Z' fill='%2333DFBF'/%3E%3Cpath d='M7.99915 16C9.20654 16 10.2166 15.1393 10.4485 14H5.5498C5.78186 15.1393 6.79187 16 7.99915 16Z' fill='%2333DFBF'/%3E%3C/svg%3E");
+    }
+
+    #{$self}_count {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+
+      @include maxWidth(576px) {
+        display: block;
+      }
+    }
+  }
+
+  &-dark {
+    #{$self}_count {
+      color: #1e7868;
+    }
+  }
+}

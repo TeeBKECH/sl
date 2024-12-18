@@ -1,0 +1,50 @@
+.select {
+}
+
+.selected {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f1f5f9;
+
+    &_head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    &_title {
+      color: #0f172a;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &_del,
+    &_add {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &_del {
+      color: #df3353;
+    }
+
+    &_add {
+      color: #59677d;
+    }
+  }
+}

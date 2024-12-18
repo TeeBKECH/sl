@@ -1,0 +1,29 @@
+@use 'sass:color';
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  color: #fff;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  transition: all 0.2s linear;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 16px;
+
+  &-main {
+    background: #1e7868;
+
+    &:hover {
+      background: color.adjust(#1e7868, $lightness: -3%);
+    }
+  }
+
+  &-fw {
+    width: 100%;
+    text-align: center;
+  }
+}

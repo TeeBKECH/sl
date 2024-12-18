@@ -1,0 +1,42 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 4;
+  $crumbs: &;
+
+  &_link,
+  &_text,
+  &_sep {
+    color: #1e7868;
+    font-size: clamp(10px, 3vw, 12px);
+  }
+
+  &_link {
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &_text,
+  &_sep {
+    font-weight: 300;
+  }
+
+  &_text {
+    color: #59677d;
+  }
+
+  &-light {
+    #{$crumbs}_link,
+    #{$crumbs}_text,
+    #{$crumbs}_sep {
+      color: #f1f1f1;
+    }
+  }
+}

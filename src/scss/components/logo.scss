@@ -1,0 +1,47 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &_img {
+    @include maxWidth(991px) {
+      width: 25px;
+    }
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+    line-height: 1;
+
+    @include maxWidth(991px) {
+      display: none;
+      gap: 0;
+    }
+
+    &_top {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      @include maxWidth(991px) {
+        font-size: 16px;
+      }
+    }
+
+    &_bottom {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &-mobile {
+      display: none;
+
+      @include maxWidth(991px) {
+        display: flex;
+      }
+    }
+  }
+}

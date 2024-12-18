@@ -1,0 +1,60 @@
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 210px;
+
+  @include maxWidth(991px) {
+    flex-direction: row-reverse;
+    gap: 8px;
+    max-width: 160px;
+  }
+
+  &_text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+
+    @include maxWidth(991px) {
+      text-align: left;
+      font-size: 13px;
+    }
+  }
+
+  &_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #9fe0ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+
+    @include maxWidth(991px) {
+      width: 28px;
+      height: 28px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    span {
+      font-weight: 500;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      @include maxWidth(991px) {
+        font-size: 13px;
+      }
+    }
+  }
+}
