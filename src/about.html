@@ -285,6 +285,7 @@
                         type="text"
                         name="birthday"
                         placeholder="Выбрать дату"
+                        class="date"
                       />
                     </label>
                     <div class="control">
@@ -407,12 +408,79 @@
                           </div>
                         </div></label
                       >
-                      <input
-                        id="polis-reg"
-                        type="text"
-                        name="polis-reg"
-                        placeholder="Выберите регион полиса..."
-                      />
+                      <div class="select">
+                        <button
+                          type="button"
+                          name="polis-region"
+                          value="two"
+                          data-select="toggle"
+                          data-index="1"
+                          data-type="single"
+                          class="select_toggle"
+                        >
+                          Выберите регион полиса...
+                        </button>
+                        <div class="select_dropdown">
+                          <ul class="select_options">
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="one"
+                              data-index="0"
+                            >
+                              Пункт 1
+                            </li>
+                            <li
+                              class="select_option select_option-selected"
+                              data-select="option"
+                              data-value="two"
+                              data-index="1"
+                            >
+                              Пункт 2
+                            </li>
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="three"
+                              data-index="2"
+                            >
+                              Пункт 3
+                            </li>
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="4"
+                              data-index="4"
+                            >
+                              Пункт 4
+                            </li>
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="5"
+                              data-index="5"
+                            >
+                              Пункт 5
+                            </li>
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="6"
+                              data-index="6"
+                            >
+                              Пункт 6
+                            </li>
+                            <li
+                              class="select_option"
+                              data-select="option"
+                              data-value="7"
+                              data-index="7"
+                            >
+                              Пункт 7
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                     <div class="control">
                       <label
@@ -467,6 +535,7 @@
                         type="text"
                         name="passport-date"
                         placeholder="Выбрать дату"
+                        class="date"
                       />
                     </label>
                     <div class="control">
