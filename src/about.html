@@ -244,9 +244,11 @@
                         >Фамилия</label
                       >
                       <input
+                        class="ok"
                         id="lastname"
                         type="text"
                         name="lastname"
+                        value="Васильев"
                         placeholder="Ваша фамилия..."
                       />
                     </div>
@@ -257,6 +259,7 @@
                         >Имя</label
                       >
                       <input
+                        class="err"
                         id="firstname"
                         type="text"
                         name="firstname"
@@ -270,6 +273,8 @@
                         >Отчество</label
                       >
                       <input
+                        disabled
+                        value="Андреевич"
                         id="thirdname"
                         type="text"
                         name="thirdname"
@@ -412,7 +417,7 @@
                         <button
                           type="button"
                           name="polis-region"
-                          value="two"
+                          value=""
                           data-select="toggle"
                           data-index="1"
                           data-type="single"
@@ -431,7 +436,7 @@
                               Пункт 1
                             </li>
                             <li
-                              class="select_option select_option-selected"
+                              class="select_option"
                               data-select="option"
                               data-value="two"
                               data-index="1"

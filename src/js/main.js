@@ -1,7 +1,11 @@
 const dateInputs = document.querySelectorAll('.date')
 if (dateInputs?.length > 0) {
   dateInputs.forEach((date) => {
-    const item = new AirDatepicker(date)
+    const item = new AirDatepicker(date, {
+      classes: 'myDate',
+      // inline: true,
+      autoClose: true,
+    })
   })
 }
 

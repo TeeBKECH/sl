@@ -1,5 +1,6 @@
 input {
-  &[type='text'] {
+  &[type='text'],
+  &[type='mail'] {
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #cbd5e1;
@@ -8,22 +9,47 @@ input {
     align-items: center;
     padding: 0 12px;
     width: 100%;
+    color: #59677d;
+    font-weight: 400;
+    font-style: italic;
 
     &::placeholder {
       color: #59677d;
       font-style: italic;
     }
 
+    &:active,
+    &:focus {
+      &:not(:disabled) {
+        border-color: #33dfbf;
+        color: #0f172a;
+        font-weight: 600;
+        font-style: normal;
+      }
+    }
+
+    &:disabled {
+      background: #f1f5f9;
+      font-weight: 400;
+      color: #94a3b8;
+      font-style: normal;
+    }
+
     &.ok {
       border-color: #34bda5;
+      background: #ecfffb;
     }
 
     &.err {
-      border-color: #f72121;
-    }
-  }
+      border-color: #df3353;
+      background: #fff3f6;
 
-  &[type='date'] {
+      &:active,
+      &:focus {
+        border-color: #cbd5e1;
+        background: #fff;
+      }
+    }
   }
 }
 

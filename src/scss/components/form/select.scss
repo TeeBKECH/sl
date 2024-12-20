@@ -65,12 +65,12 @@
     gap: 8px;
 
     &:hover {
-      color: darken(#59677d, 10);
+      color: darken(#33dfbf, 10);
     }
 
     &-selected {
       // font-weight: 700;
-      // color: #000;
+      color: #33dfbf;
     }
   }
 

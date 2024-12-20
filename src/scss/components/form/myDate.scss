@@ -1,0 +1,22 @@
+.myDate {
+  .air-datepicker-body--day-name {
+    color: #1f806e;
+  }
+
+  .air-datepicker-cell.-day-.-current-,
+  .air-datepicker-cell.-month-.-current-,
+  .air-datepicker-cell.-year-.-current- {
+    color: #1f806e;
+  }
+
+  .air-datepicker-cell.-day-.-selected-,
+  .air-datepicker-cell.-month-.-selected-,
+  .air-datepicker-cell.-year-.-selected- {
+    color: #fff;
+    background: #1f806e;
+  }
+
+  .air-datepicker--navigation {
+    background: #f1f5f9;
+  }
+}
