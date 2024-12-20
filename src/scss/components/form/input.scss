@@ -1,6 +1,7 @@
 input {
   &[type='text'],
-  &[type='mail'] {
+  &[type='mail'],
+  &[type='password'] {
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #cbd5e1;

@@ -34,27 +34,36 @@
               <span>Вход в аккаунт</span>
             </div>
             <div class="auth_form_controls">
-              <div class="auth_form_control">
-                <label for="email">
-                  <span>Электронная почта</span>
-                  <input
-                    type="email"
-                    class="err"
-                    placeholder="Введите ваш e-mail"
-                    required
-                  />
-                </label>
+              <div class="control">
+                <label
+                  class="control_title"
+                  for="mail"
+                  >Электронная почта</label
+                >
+                <input
+                  class="ok"
+                  id="mail"
+                  type="mail"
+                  name="mail"
+                  value="test@test.com"
+                  placeholder="Введите ваш e-mail"
+                  required
+                />
               </div>
-              <div class="auth_form_control">
-                <label for="password">
-                  <span>Пароль</span>
-                  <input
-                    class="ok"
-                    type="password"
-                    placeholder="Введите пароль..."
-                    required
-                  />
-                </label>
+              <div class="control">
+                <label
+                  class="control_title"
+                  for="password"
+                  >Пароль</label
+                >
+                <input
+                  class="err"
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Введите пароль..."
+                  required
+                />
               </div>
               <div class="auth_form_control">
                 <button
